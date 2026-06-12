@@ -96,15 +96,52 @@ body {
     background-color: #131313;
     margin: 0;
     padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.50)), url("assets/backgroundThing.webp");
+    background-size: cover;
+    background-position: center;
+
 }
 .break {
-    height: 70px;
+    height: 30px;
+}
+ /* instructions section */
+.instructions {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 200px;
+  font-size: 18px;
+    text-align: center;
+    padding: 20px;
+    color: #ffffff;
 }
 /* edits for the intro content */
-.bedroom {
-    background-color: #131313;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.stage {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.stage img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  object-fit: contain;
+  border-radius: 10px;
+  animation: opacity linear both;
+  animation-timeline: view();
+  animation-range: entry 10% cover 40%;
+}
+
+@keyframes opacity {
+  from {
+    scale: 0.7;
+  }
+  to {
+    scale: 1;
+  }
 }
