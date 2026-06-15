@@ -132,16 +132,32 @@ body {
   margin: 0 auto;
   object-fit: contain;
   border-radius: 10px;
-  animation: opacity linear both;
+  animation: scale linear both;
   animation-timeline: view();
   animation-range: entry 10% cover 40%;
 }
-
-@keyframes opacity {
+/* Animation for the room image */
+@keyframes scale {
   from {
     scale: 0.7;
   }
   to {
     scale: 1;
   }
+}
+.keyboard {
+
+  left: 4%; top: 90%; width: 10%; height: 10%;
+}
+.computer {
+  left: 86%; top: 10%; width: 10%; height: 10%;
+}
+.hotspot {
+  position: absolute;
+  border: 3px solid #ff0000;
+}
+.hotspot:hover {
+  border: 3px solid #00ff00;
+  cursor: pointer;
+  background: rgba(62, 141, 62, 0.441);
 }
