@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Grid+Double:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+
+
+/* header text and animations */
+h1 {
+    font-family: "Bitcount Grid Double", sans-serif;
+    font-size: 40px;
+    font-weight: 450;
+    text-align: center;
+    color: #5CA960;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    animation: zoom 2s ease-in-out infinite alternate;
+}
+/* discovered on accident*/
+@keyframes zoom {
+  from {
+    transform: scale(1);
+    color: #5CA960;
+  }
+  to {
+    transform: scale(1.05);
+    color: #407443;
+  }
+}
+/* edits for the heading */
+.heading {
+    margin: 0;
+    background-color: #ffffffd2;
+    padding: 0px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    
+}
+/* here is the code for images and animations */
+.plant-img {
+    width: 45px;
+    height: 45px;
+    margin: 0 0px 0 0;
+    padding: 20px;
+    
+    animation: spin 2s ease-in-out infinite alternate;
+
+}
+.music-img {
+    width: 45px;
+    height: 45px;
+    margin: 0 0 0 0px;
+    padding: 20px;
+    animation: spin 2s ease-in-out infinite alternate;
+}
+@keyframes spin {
+  from {
+    transform: rotate(-20deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+
+}
+/* edits for the buttons below header */
+.header-buttons {
+  background-color: #4c844e;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none; /* Removes the underline */
+  display: inline-block;
+  border-radius: 5px;
+  font-family: 'Lilita One', sans-serif;
+    font-weight: 200px;
+  box-shadow: 5px 5px 10px rgba(43, 43, 43, 0.3);
+}
+/* edits for the buttons area */
+.header-buttons-container {
+    margin: 0;
+    background-color: #ffffffd2;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.header-buttons:hover {
+    background-color: #3a6b3c;
+    box-shadow: 5px 5px 10px rgba(43, 43, 43, 0.5);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
