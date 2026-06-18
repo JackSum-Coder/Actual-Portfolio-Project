@@ -1,59 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+<link rel="stylesheet" href="styleFiles.css">
+
 <head>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
 </head>
 <body>
-  
-    <div class="stage">
-        <img src="assets/computer.png" alt="computer">
-
-    <a class="hotspot synthesizer" href="aboutme.html">
-      <span class="label">About Me</span>
-    </a>
-
-    <a class="hotspot keyboard" href="skills.html">
-      <span class="label">Skills</span>
-    </a>
+     <div class="heading">
+        <img src="assets/plantIcon.png" class="plant-img" alt="Plant Icon">
+        <h1>Jack Sommerville's Portfolio</h1> 
+        <img src="assets/musicIcon.png" class="music-img" alt="Music Icon">
+        
     </div>
+    <div class="header-buttons-container">
+        <a href="aboutme.html" class = "header-buttons">About Me</a>
+        <a href="contact.html" class = "header-buttons">Contact</a>
+        <a href="projects.html" class = "header-buttons">Projects</a>
+        <a href="skills.html" class = "header-buttons">Skills</a>
+    </div>
+    <p class = "contact"> Hello!You can reach out at: 812-568-5454</p>
 </body>
 
 <style>
-    .stage {
-  position: relative;
-  width: 100%;
-  max-width: 4032px;
-  margin: 0 auto;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  box-sizing: border-box;
-}
-.stage img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-  object-fit: contain;
-  border-radius: 10px;
-  animation: scale linear both;
-  animation-timeline: view();
-  animation-range: entry 10% cover 30%;
- 
-}
-/* Animation for the room image */
-@keyframes scale {
-  from {
-    scale: 0.7;
-  }
-  to {
-    scale: 1;
-  }
-}
+body {
 
+  background-image: url("assets/computer.png");  
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    min-height: 100vh; 
+    height:min-content;
+}
+.contact {
+margin: 40%;
+color: white;
+align-content: left;
+}
 </style>
 </html>
