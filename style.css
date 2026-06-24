@@ -99,7 +99,7 @@ body {
     margin: 0;
     padding: 0;
     /* tip I learned online to add gradient over an image */
-    background-image: linear-gradient(rgba(0, 0, 0, 0.484), rgba(0, 0, 0, 0.804)), url("assets/backgroundThing.webp");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.822), rgba(0, 0, 0, 0.804)), url("assets/backgroundThing.webp");
     background-size: cover;
     background-position: center;
 

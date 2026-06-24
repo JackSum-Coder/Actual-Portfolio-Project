@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="styleFiles.css">
+
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <div class="heading">
+        <img src="assets/plantIcon.png" class="plant-img" alt="Plant Icon">
+        <h1>Projects</h1> 
+        <img src="assets/musicIcon.png" class="music-img" alt="Music Icon">
+        
+    </div>
+    <div class="header-buttons-container">
+        <a href="home.html" class = "header-buttons">Home</a>
+        <a href="aboutme.html" class = "header-buttons">About Me</a>
+        <a href="projects.html" class = "header-buttons">Projects</a>
+        <a href="skills.html" class = "header-buttons">Skills</a>
+    </div>
+    <div class="folder-item">
+        <button class="folder-button" id = "project1" type="button" aria-label="Open folder"></button>
+
+        <p class="text-provided">Project 1</p>
+
+        <button class="folder-button" id = "project2" type="button" aria-label="Open folder"></button>
+        
+        <p class="text-provided">Project 2</p>
+
+        <button class="folder-button" id = "project3" type="button" aria-label="Open folder"></button>
+        
+        <p class="text-provided">Project 3</p>
+    </div>
+
+</body>
+<style>
+body {
+    background-image: url("assets/windowsBg.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0 0 40px;
+    overflow-x: hidden;
+}
+
+h1 {
+    animation: none;
+}
+.folder-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.folder-button {
+    width: 100px;
+    height: 100px;
+    background-image: url("assets/folderIcon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+.text-provided {
+    margin: 5px 0 0;
+    color: white;
+    font-size: 18px;
+    text-align: left;
+}
+.folder-button:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+
+}
+
+</style>
+</html>
