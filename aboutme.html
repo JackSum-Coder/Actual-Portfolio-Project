@@ -21,16 +21,28 @@
     </div>
 
     <div class="mylife">
-        <p>
-I'm Jack Sommerville, an incoming senior at Castle High School with a passion for technology, music, and building things. My coding journey began with Scratch in elementary school and has grown into completing all three computer science courses my school offers. I've paired that interest with a challenging academic schedule that includes nearly ten AP classes and the highest level of mathematics available.
-        </p>
-        <p> 
-Outside the classroom, I competed at State with We The People, where I developed a deeper appreciation for civics and critical thinking. I'm also involved in National Honor Society and Student Council, and I volunteer with Sleep in Heavenly Peace, helping build beds for children in need.
-        </p>
-        <p>
-Music has been a major part of my life for years. I play piano and drums, have performed in a band, and enjoy exploring new instruments and recording gear. When I'm not coding or making music, you'll usually find me at the gym, working on a new Lego project, hiking, or playing disc golf. I enjoy taking on challenges, seeing projects through, and having fun along the way.
 
-        </p>
+
+      <div class = "sections">
+        <p class = "marginAdder">
+I'm Jack Sommerville, an incoming senior at Castle High School with a passion for technology, music, and building things. My interest in computer science has grown from Scratch to completing all three CS courses my school offers, while taking a rigorous schedule of AP classes and advanced math.        </p>
+      <img src = "assets/hikePic.png"  class = "picturesAbout">
+      </div>
+      
+
+      <div class="sections">   
+        
+      <img src="assets/beachPic.png" class = "picturesAbout">
+      <p class = "marginAdder"> 
+Outside the classroom, I competed at State with We The People, where I strengthened my civics and critical thinking skills. I'm also active in National Honor Society, Student Council, and volunteer with Sleep in Heavenly Peace, building beds for children in need.        </p>
+      </div>
+        
+      <div class="sections">
+      <p class = "marginAdder">
+Music has been a major part of my life for years—I play piano and drums, have performed in a band, and enjoy recording music for my youtube channel. Outside of coding and music, I spend my time at the gym, building Lego projects, hiking, or playing disc golf.        </p>
+      <img src = "assets/gigPic.png" class = "picturesAbout">
+      </div>
+        
     </div>
 </body>
 
@@ -54,25 +66,57 @@ Music has been a major part of my life for years. I play piano and drums, have p
 .mylife {
     font-family: 'Lilita One', sans-serif;
   font-weight: 50px;
-  font-size: 1.8rem;
+  font-size: 2rem;
   text-align: left;
-  padding: 90px;
-  color: #93b893;
+  padding: 40px;
+  color: #67a76a;
   margin:0px;
-  animation: scale linear both;
-  animation-timeline: view();
-  animation-range: entry 0% cover 55%;
+  
  
+}
+.picturesAbout {
+   width: 300px;
+
+  height: auto;
+  border-radius: 10%;
+  border: 10px solid #5CA960; 
+  margin: 30px;
+  padding: 0px;
 }
 /* Animation for the room image */
 @keyframes scale {
   from {
+    color: #253f26;
     scale: 0.7;
+        filter: blur(4px);
+
   }
   to {
+    color: #84b387;
     scale: 1;
+ filter: blur(0px);
   }
 }
 
+@keyframes blur {
+  from {
+
+  }
+  to {
+   
+
+  }
+}
+.sections {
+  display: flex;
+  animation: scale linear both;
+  animation-timeline: view();
+  animation-range: entry 0% cover 45%;
+  margin: 0px;
+  
+}
+.marginAdder {
+  margin: 90px;
+}
 </style>
 </html>
