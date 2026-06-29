@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 
+@view-transition {
+  navigation: auto;
+}
+
 /* header text and animations */
 h1 {
     font-family: "Bitcount Grid Double", sans-serif;
